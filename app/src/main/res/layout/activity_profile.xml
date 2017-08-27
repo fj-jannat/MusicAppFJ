@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.fatimajannat.musicapp.ProfileActivity">
+
+    <TextView
+        android:id="@+id/textViewArtist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textColor="#000"
+        android:padding="10dp"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:text="Artist Profile"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_below="@id/textViewArtist"
+        android:id="@+id/linearLayoutName"
+        android:orientation="horizontal">
+
+        <TextView
+            android:textColor="#000"
+            android:textSize="16sp"
+            android:text="Artist Name: "
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textViewNameLabel"/>
+        <EditText
+            android:textColor="#000"
+            android:textSize="16sp"
+            android:text=" "
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/editTextName"
+            android:enabled="false"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_below="@+id/linearLayoutName"
+        android:id="@+id/linearLayoutGenre"
+        android:orientation="horizontal">
+
+        <TextView
+            android:textColor="#000"
+            android:textSize="16sp"
+            android:text="Artist Genre: "
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textViewGenreLabel"/>
+        <TextView
+            android:textColor="#000"
+            android:textSize="16sp"
+            android:text=" "
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/textViewGenre"
+            />
+        <Spinner
+            android:id="@+id/spinnerGenres"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:entries="@array/genres"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_below="@+id/linearLayoutGenre"
+        android:id="@+id/linearLayoutButton"
+        android:orientation="horizontal">
+
+    <Button
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonEditArtist"
+        android:text="@string/edit_artist"
+        android:textStyle="bold"
+        android:textColor="#FFF"
+        android:background="@color/colorPrimary"/>
+    <Button
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonSaveInfo"
+        android:text="Save Info"
+        android:textStyle="bold"
+        android:background="#00FF00"
+        />
+    </LinearLayout>
+    <Button
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonDeleteArtist"
+        android:layout_below="@id/linearLayoutButton"
+        android:text="@string/delete_artist"
+        android:textStyle="bold"
+        android:background="#ff40"/>
+
+</RelativeLayout>

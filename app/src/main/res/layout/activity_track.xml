@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.fatimajannat.musicapp.TrackActivity">
+
+    <TextView
+        android:id="@+id/textViewArtist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textColor="#000"
+        android:padding="10dp"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:text="@string/adding_track"/>
+
+    <EditText
+        android:id="@+id/editTextTrack"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewArtist"
+        android:padding="5dp"
+        android:hint="@string/enter_a_track_name"/>
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/editTextTrack"
+        android:id="@+id/linearLayoutTrack"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <SeekBar
+            android:id="@+id/seekBarRating"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:max="5"/>
+
+        <TextView
+            android:textColor="#000"
+            android:textSize="16sp"
+            android:text="@string/_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textViewRating"/>
+    </LinearLayout>
+
+    <Button
+        android:background="@color/colorAccent"
+        android:id="@+id/buttonAddTrack"
+        android:text="@string/add_track1"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/linearLayoutTrack"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#fff"/>
+
+    <TextView
+        android:layout_below="@id/buttonAddTrack"
+        android:id="@+id/textViewTracksList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textColor="#000"
+        android:padding="10dp"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:text="@string/tracks"/>
+
+    <ListView
+        android:layout_below="@id/textViewTracksList"
+        android:id="@+id/listViewTracks"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>

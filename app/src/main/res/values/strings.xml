@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">MusicApp</string>
+    <string name="enter_name">Enter Name</string>
+    <string name="add_artist">Add Artist</string>
+    <string name="artists">Artists</string>
+    <string name="tap_on_the_artist_to_update_or_delete">Tap on the artist to update or delete</string>
+    <string name="atif_aslam">Atif Aslam</string>
+    <string name="rock">Rock</string>
+    <string name="track_name">Track name</string>
+    <string name="add_track">Add Track</string>
+    <string name="adding_track">Adding Track</string>
+    <string name="enter_a_track_name">Enter a track name</string>
+    <string name="_1">1</string>
+    <string name="add_track1">Add Track</string>
+    <string name="tracks">Tracks</string>
+    <string name="abcsong">ABCsong</string>
+    <string name="ratingnumber">RatingNumber</string>
+    <string name="artist_name">Artist Name</string>
+    <string name="delete_artist">Delete Artist</string>
+    <string name="edit_artist">Edit Artist</string>
+    <array name="genres">
+        <item name="rock">Rock</item>
+        <item name="pop">Pop</item>
+        <item name="jazz">Jazz</item>
+        <item name="local">Local</item>
+
+    </array>
+</resources>

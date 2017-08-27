@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "69602479435",
+    "firebase_url": "https://musicapp-ee7ef.firebaseio.com",
+    "project_id": "musicapp-ee7ef",
+    "storage_bucket": "musicapp-ee7ef.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:69602479435:android:a6e75c5d7c3c50eb",
+        "android_client_info": {
+          "package_name": "com.example.fatimajannat.musicapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "69602479435-c7phut4pi6b90p0c5lab6v2f8k92uvja.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.fatimajannat.musicapp",
+            "certificate_hash": "9c23f8b4c17e8aae746e1d6bb7a5e5b41f34dae2"
+          }
+        },
+        {
+          "client_id": "69602479435-d9kai56khp2q5mudndi1p4qvurtp0eq2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBCW1yxcqcmIVmqmsgGgTKJ2tP-ww4Ld0U"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "69602479435-d9kai56khp2q5mudndi1p4qvurtp0eq2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
